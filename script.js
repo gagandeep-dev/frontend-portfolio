@@ -1,7 +1,7 @@
 // ===============================
 // GSAP Professional Animations
-// Author: Gagandeep's GSAP Dev
-// ===============================
+// Author: gagandeep-dev
+// ======================
 
 // Register ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
@@ -184,3 +184,24 @@ gsap.from(".final-footer p", {
   stagger: 0.3,
   duration: 0.7
 });
+
+
+
+  const hamburger = document.getElementById('hamburger');
+  const navItems = document.querySelector('.nav-items');
+   const nav = document.querySelector('.nav');
+  const logo = document.querySelector('.logo');
+  const menu = document.querySelector('#hamburger');
+
+  hamburger.addEventListener('click', () => {
+    navItems.classList.toggle('mobile-active');
+
+    if (navItems.classList.contains('mobile-active')) {
+      nav.style.height = '30vh';
+      logo.style.display = 'none';
+      menu.style.display = 'none';
+    } else {
+      nav.style.height = '50px'; // or your original height
+    }
+  });
+
