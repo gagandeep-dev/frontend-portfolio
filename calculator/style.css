@@ -1,0 +1,220 @@
+.press-start-2p-regular {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+ html,body{
+    width: 100%;
+    height: 100%;
+ }
+ 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ body{
+    background-color: #457b9d;
+    overflow-y: hidden;
+ }
+video{
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    opacity: 0.7;
+    z-index: -99;
+}
+#lets-calculate{
+    display: flex;
+
+}
+#lets-calculate img{
+    height: 10vw;
+}
+#lets-calculate h2{
+    color: white;
+    position: relative;
+    font-size: 2vw;
+    font-weight: 900;
+    text-shadow: 6px 6px #000000;
+    top: 4vw;
+}
+.container{
+    width: 25%;
+    height: 70vh;
+    border: 2px solid #000000;
+    background-color: #6a4e42;
+    padding: 2vw;
+    border-radius: 2vw;
+    transform: translate(250%,-5%);
+    box-shadow: 2px 2px 2px 2px whitesmoke;
+    overflow: hidden;
+    
+}
+.container #screen{
+    width: 100%;
+    height: 5rem;
+    padding: 1vw;
+    margin-bottom: 2vw;
+    border-radius: 2vw;
+    border: none;
+    box-shadow: 2px 2px 2px 2px whitesmoke;
+}
+#screen{
+    font-size: 2vw;
+    color: #1a1a1a;
+    background-color: #fff8dc;
+    font-weight: 500;
+    font-family: 'Press Start 2P', cursive;
+}
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4,3vw);
+    gap: 1.8vw;
+    justify-content: center;
+    justify-items: center;
+    margin-top: -0.5vw;
+}
+button{
+    font-family: 'Press Start 2P', cursive;
+    padding: 1vw 1.5vw;
+    font-size: 1vw;
+    text-shadow: 2px 2px #ffffff;
+    font-weight: 800;
+    border-radius: 1vw;
+    color: #1a1a1a;
+    border: none;
+    background-color: #ffbe0b;
+    box-shadow: 2px 2px 2px 2px whitesmoke;
+}
+button:hover {
+  background-color: #f77f00;
+  transform: scale(1.05);
+}
+button:active {
+  transform: scale(0.95);
+}
+#longbutton{
+    padding: 1vw 2vw;
+}
+.longbutton{
+    display: flex;
+    gap: 1vw;
+    justify-content: space-between;
+    justify-items: center;
+    position: relative;
+    left: 7.1vw;
+    
+}
+footer{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    position: relative;
+    top: 2vw;
+    text-shadow: 2px 2px #000000;
+    color: white;
+}
+
+
+
+
+.coin-collector {
+  position: fixed;
+  top: 10rem;
+  left: 3.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 2px solid #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  z-index: 10;
+  font-family: 'Press Start 2P', cursive;
+  color: #fff;
+  font-size: 1rem;
+  box-shadow: 2px 2px #000;
+  backdrop-filter: blur(5px);
+}
+
+.coin-collector img {
+  width: 24px;
+  height: 24px;
+}
+
+
+
+
+
+.coin-animation-area {
+  position: absolute;
+  top: 80px;
+  left: 30px;
+  width: 100px;
+  height: 400px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.coin {
+  width: 50px;
+  height: 50px;
+  background: url('DJV\ JUL\ 2361-01-Photoroom.png') no-repeat center/cover;
+  position: absolute;
+  animation: fall 4s infinite linear;
+}
+
+.coin:nth-child(1) {
+  left: 10px;
+  animation-delay: 0s;
+}
+
+.coin:nth-child(2) {
+  left: 40px;
+  animation-delay: 1s;
+}
+
+.coin:nth-child(3) {
+  left: 20px;
+  animation-delay: 2s;
+}
+
+@keyframes fall {
+  0% {
+    top: -30px;
+    opacity: 0;
+    transform: rotate(0deg);
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    top: 400px;
+    opacity: 0;
+    transform: rotate(360deg);
+  }
+}
+
+
+
+.mario-platform {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  background-size: contain;
+}
+.mario-platform img{
+    height: 50vw;
+    width: 50vw;
+}
+
+#marioclapping{
+    height: 12vw;
+    position: absolute;
+    z-index: 999999;
+    top: 18.5rem;
+    left: 32.5rem;
+}

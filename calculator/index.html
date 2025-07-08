@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body class="press-start-2p-regular">
+    <div class="main">
+        <video src="6916369_Motion_Graphics_Motion_Graphic_3840x2160.mp4" autoplay muted loop></video>
+        <div id="lets-calculate">
+            <img src="Super-Mario-World-PNG-Background-Clip-Art.png" alt="mario">
+            <h2>Lets's Calculate!</h2>
+        </div>
+        <div class="center">
+            <img src="Mario Standing png.png" id="marioclapping" alt="">
+            <div class="coin-collector">
+                
+                <div class="mario-platform">
+                    <img src="—Pngtree—cartoon game clearance brick decorative_5778352.png" alt="">
+                </div>
+
+                <audio id="coin-sound" src="mario_coin_sound.mp3" preload="auto"></audio>
+            <img src="DJV JUL 2361-01-Photoroom.png" alt="Coin" />
+            <span id="coin-count">0</span>
+            </div>
+
+            <div class="coin-animation-area">
+            <div class="coin"></div>
+            <div class="coin"></div>
+            <div class="coin"></div>
+            </div>
+            
+
+             <div class="container">
+            <input type="text" disabled id="screen"/>
+            <div class="buttons">
+                <button onclick="clearDisplay()">C</button>
+                <button onclick="appendValue('%')">%</button>
+                <button onclick="appendValue('/')">/</button>
+                <button onclick="appendValue('*')">*</button>
+
+                <button onclick="appendValue('7')">7</button>
+                <button onclick="appendValue('8')">8</button>
+                <button onclick="appendValue('9')">9</button>
+                <button onclick="appendValue('+')">+</button>
+                
+                <button onclick="appendValue('4')">4</button>
+                <button onclick="appendValue('5')">5</button>
+                <button onclick="appendValue('6')">6</button>
+                <button onclick="appendValue('-')">-</button>
+
+                <button onclick="appendValue('1')">1</button>
+                <button onclick="appendValue('2')">2</button>
+                <button onclick="appendValue('3')">3</button>
+                <button onclick="appendValue('.')">.</button>
+                
+                <div class="longbutton">
+                
+                <button onclick="appendValue('0')" id="longbutton">0</button>
+                <button onclick="calculate(),calculate1()" id="longbutton">=</button>
+                <button onclick="clearOne()" id="longbutton"><i class="ri-delete-back-2-line"></i></button>
+                </div>
+            </div>
+            </div>
+        </div>
+       
+    </div>
+
+    <footer>
+  <p>Created with ❤️ by Gagandeep | Powered by HTML, CSS & JavaScript</p>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
