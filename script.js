@@ -193,7 +193,9 @@ gsap.from(".final-footer p", {
   const logo = document.querySelector('.logo');
   const menu = document.querySelector('#hamburger');
 
-  hamburger.addEventListener('click','touchstart' () => {
+  ['click', 'touchstart'].forEach(event => {
+  hamburger.addEventListener(event, () => {
+
     navItems.classList.toggle('mobile-active');
 
     if (navItems.classList.contains('mobile-active')) {
@@ -202,6 +204,10 @@ gsap.from(".final-footer p", {
       menu.style.display = 'none';
     } else {
       nav.style.height = '50px'; // or your original height
+      logo.style.display = 'block';
+      menu.style.display = 'block';
+
     }
+  });
   });
 
