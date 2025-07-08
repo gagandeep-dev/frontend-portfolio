@@ -892,3 +892,41 @@ input[type=email] {
 
 
 }
+
+@media (max-width: 990px) {
+  .nav-items.mobile-active {
+    display: flex !important;
+    flex-direction: column;
+    width: 100%;
+    grid-column: 1/9;
+    padding: 10px;
+    z-index: 100;
+
+  }
+  
+
+  .nav-items.mobile-active ul {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+  }
+
+  .nav-items.mobile-active ul li {
+    margin-block: 10px;
+    background-color: #243b55;
+    border: 2px solid #f5f7fa;
+    box-shadow: 1px 1px 1px 1px #ffffff;
+    padding: 10px;
+    width : 50%;
+
+  }
+
+  .nav-items.mobile-active ul li a {
+    color: #ffca3a;
+    font-size: 20px;
+  }
+}
