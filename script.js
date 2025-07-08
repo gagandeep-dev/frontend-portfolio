@@ -193,7 +193,7 @@ gsap.from(".final-footer p", {
   const logo = document.querySelector('.logo');
   const menu = document.querySelector('#hamburger');
 
-  hamburger.addEventListener('click', () => {
+  hamburger.addEventListener('click','touchstart' () => {
     navItems.classList.toggle('mobile-active');
 
     if (navItems.classList.contains('mobile-active')) {
