@@ -205,6 +205,39 @@ footer {
   border-top-right-radius: 30px;
   margin-top: 60px;
 }
+/* Navbar Responsive Media Query */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+    gap: 10px;
+  }
+
+  nav ul li {
+    width: 100%;
+  }
+
+  nav ul li a {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+  }
+
+  nav ul li a:hover {
+    background-color: #ffdde5;
+    color: #ff5c8a;
+  }
+}
 
 @media (min-width: 768px) {
   .hero {
