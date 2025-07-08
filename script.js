@@ -199,7 +199,7 @@ gsap.from(".final-footer p", {
     navItems.classList.toggle('mobile-active');
 
     if (navItems.classList.contains('mobile-active')) {
-      nav.style.height = '30vh';
+      nav.style.height = '50vh';
       logo.style.display = 'none';
       menu.style.display = 'none';
     } else {
